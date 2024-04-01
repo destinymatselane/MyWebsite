@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/style.css">
 </head>
-<body>
+<body id="pageID_portfolio">
     <div class="content-container">
         <nav class="nav">
             <ul id="menu">
@@ -30,6 +30,117 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, inventore debitis soluta voluptate nulla possimus. Assumenda architecto ad est praesentium, officiis repudiandae quidem, quisquam sunt, fuga reprehenderit soluta ipsam. Mollitia.
             </p>
         </div>
+        <div class="item_list">
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/2.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>ToDo App</h3>
+                        <p>In completing this little app, I mustered the fundamentals of CRUD. I also learned how to connenct my database with my server</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/3.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Blog APP</h3>
+                        <p>Dealing with Advanced CRUD REST API's and databases and Content delivery networks by ading images to the blog. Used Firebase/Amozon S3/Cloud Flare</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/4.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>URL Shortner</h3>
+                        <p>Understanding 3rd party services and perform some logical processing in my server.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/5.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Weather API</h3>
+                        <p>This project aims to increase the the usage of 3rd party services. This returns the weather of a city/location to the client</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/1.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>Creating schemas and updating my database skills and payment method APIs.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/6.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, inventore debitis soluta voluptate nulla possimus. Assumenda architecto ad est praesentium, officiis repudiandae quidem, quisquam sunt, fuga reprehenderit soluta ipsam. Mollitia.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/7.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Job Board</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, inventore debitis soluta voluptate nulla possimus. Assumenda architecto ad est praesentium, officiis repudiandae quidem, quisquam sunt, fuga reprehenderit soluta ipsam. Mollitia.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/8.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Chat application</h3>
+                        <p>This chat app primarialy focuses on Web Sockets.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/9.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Music Streaming</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, inventore debitis soluta voluptate nulla possimus. Assumenda architecto ad est praesentium, officiis repudiandae quidem, quisquam sunt, fuga reprehenderit soluta ipsam. Mollitia.</p>
+                    </div>
+                </div>         
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/10.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Video Sharing</h3>
+                        <p>Learing how to devide media into chunks as movies are big.</p>
+                    </div>
+                </div>         
+            </a>
+            <a href="" target="_blank" data-type="" class="item">
+                <img src="img/portfolio/11.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Proximity Service</h3>
+                        <p>Using Google Maps and how geo hashing is done. This app shoud tell me how many people around me are using pokemon go.
+                        </p>
+                    </div>
+                </div>         
+            </a>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        document.querySelectorAll(".item:nth-child(-n+11)").forEach(function(element) {
+            VanillaTilt.init(element, {
+                max: 10,
+                speed: 400
+            });
+        });
+    </script>
 </body>
 </html>
